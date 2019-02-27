@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS items (
+    id integer PRIMARY KEY,
+  	key1 TEXT NOT NULL,
+    key2 TEXT not NULL UNIQUE,
+    url TEXT NOT NULL UNIQUE,
+    title TEXT NOT NULL,
+    style TEXT,
+    price TEXT NOT NULL,
+    sizes TEXT,
+    soldout INTEGER NOT NULL,
+    epoch INTEGER NOT NULL,
+    createdAt TEXT NOT NULL,
+    updatedAt TEXT NOT NULL
+ );
